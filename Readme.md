@@ -6,8 +6,8 @@ This is the coding convention for SSS Android Team. The IDE is ADT (based on Ecl
 -------------
 ### Table of content
 
-- [Project structure][#toc_2]
-- [Naming][#toc_6]
+- [Project structure][toc_2]
+- [Naming][toc_6]
 
 -------------
 
