@@ -15,10 +15,13 @@ This is the coding convention for SSS Android Team. The IDE is ADT (based on Ecl
 Assume the project is <b>"Drive SG"</b>, create the root folder of project which name is lower-case and connected by hyphens. After that, switch workspace to the root folder and create project in ADT. <b>We must check out or init git here.</b>
 
 **Do**
+
 ```
 drive-sg
 ```
+
 **Don't**
+
 ```
 Drive SG or whatever
 ```
@@ -27,10 +30,13 @@ Drive SG or whatever
 Follow the standard package naming. Assume the customer's URL is <b>"www.drive.sg"</b>, then package name is <b>"sg.drive.app"</b>. Never use our company URL as the package name.
 
 **Do**
+
 ```
 sg.drive.app
 ```
+
 **Don't**
+
 ```
 com.sss.drive.sg.app or whatever
 ```
@@ -58,6 +64,7 @@ Following are partial package names corresponding to the classes they contain.
 Using camelCase. Class name must end with it's type <b>except model classes</b>. This will increase recognition of classes.
 
 **Examples**
+
 ```
 //activity
 MainActivity.java 
@@ -85,6 +92,7 @@ Car.java
 All methods must be camelCase and start with a lower-case character.
 
 **Examples**
+
 ```
 protected void openDatabase()
 protected void onNetworkResult()
@@ -94,6 +102,7 @@ protected void callback()
 Methods inside a <b>callback</b> listener interface must begin with <b>on</b> or a verb.
 
 **Examples**
+
 ```
 public void onResult();
 public void switchToFragment(Fragment fragment);
@@ -103,6 +112,7 @@ public void showSummaryDialog();
 Avoid including any unnecessary string in method name.
 
 **Examples**
+
 ```
 //in network handler class, instead of this
 void callApiGetCars();
@@ -119,6 +129,7 @@ void getPromotions();
 All variables must be camelCase. All variables must start with a lower-case character.
 
 **Examples**
+
 ```
 //private and protected
 int level;
@@ -132,6 +143,7 @@ public Profile profile
 Variable which represents view: if there is only one view of the class in the layout, name it as the class name. Otherwise, name it with the class of view following by the field name.                                                     
 
 **Examples**
+
 ```
 //if there's only one view of that type
 ImageView imageView;
@@ -143,13 +155,17 @@ ImageView imageViewAvatar;
 
 ####5. Naming constants and enums
 All constants must all be upper-case connected by hyphens.
+
 **Example**
+
 ```
 public static final String API_URL = "https://beta.siliconstraits.vn/api"
 ```
 
 Enum name must be camelCase. All item in an enum must be upper-case connected by hyphens.
+
 **Example**
+
 ```
 //normal enum
 public enum AppNetworkResult {
